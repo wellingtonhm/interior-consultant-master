@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/***** PATTERN *****/
+
+* {
+    --background-site: #181719;
+    --color-white: #FFFFFF;
+    --color-footer: #A9A9A9;
+    --color-title-author: #828282;
+    --background-author:
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    background-color: var(--background-site);
+}
+
+body {
+    margin: 0.75rem 1.1875em 0.75rem 1.1875em;
+}
+
+/***** HEADER *****/
+
+#header-logo-menu {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+
+}
+
+#logo {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-white);
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+#logo a {
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.875rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+#menu {
+    text-align: right;
+    color: var(--color-white);
+}
+
+/***** MENU *****/
+
+#menu-mobile {
+    background-color: #af2626;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+}
+.content-menu-mobile{
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.content-menu-mobile {
+    list-style: none;
+}
+
+
+
+/***** MAIN *****/
+
+#content {
+    display: grid;
+    margin-top: 2.25rem;
+}
+
+.text-description {
+    margin-bottom: 2.375rem;
+
+}
+
+.read-more a,
+span {
+    display: flex;
+    align-items: center;
+}
+
+/* Font-Text **/
+
+/*Font-icons-google*/
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: tr;
+
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.text-description h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.text-description p,
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.text-description a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Image **/
+
+.image-description img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Image-description **/
+.image-description {
+    display: grid;
+}
+
+/* author **/
+
+.author {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.875rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.8125rem 1.375rem 0.8125rem 1.375rem;
+    align-items: center;
+    background-color: var(--background-site);
+    margin-top: -2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 0.75rem;
+
+}
+
+.author img {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.name-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-white);
+
+}
+
+.title-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 500;
+    color: var(--color-title-author);
+}
+
+.description-author {
+    font-family: 'Lora', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-white);
+
+}
+
+.container-description-author {
+    grid-column: span 2;
+}
+
+/***** FOOTER *****/
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875em;
+    font-weight: 700;
+    color: var(--color-footer);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+
+}
