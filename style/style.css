@@ -5,6 +5,10 @@
 /***** PATTERN *****/
 
 * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     --background-site: #181719;
     --color-white: #FFFFFF;
     --color-footer: #A9A9A9;
@@ -13,8 +17,7 @@
 }
 
 html {
-    box-sizing: border-box;
-    margin: 0;
+
     font-size: 16px;
     background-color: var(--background-site);
 }
@@ -56,27 +59,62 @@ body {
 
 /***** MENU *****/
 
-#menu-mobile {
-    background-color: #af2626;
+.menu-site {
+    display: grid;
+    background-color: var(--background-site);
 
     height: 100vh;
     width: 100vw;
 
+    opacity: 0;
+    visibility: hidden;
+
     position: fixed;
     top: 0;
     left: 0;
-    
-    
-}
-.content-menu-mobile{
-    display: grid;
-    gap: 2rem;
-    justify-items: center;
+
+    place-content: center;
+
 }
 
-.content-menu-mobile {
-    list-style: none;
+.menu-site.show {
+    
+    opacity: 1;
+    visibility: visible;
+
 }
+
+
+
+.content-menu-site {
+    display: grid;
+    gap: 2rem;
+    list-style: none;
+
+
+}
+
+.content-menu-site li {
+
+    align-items: center;
+
+}
+
+.links-menu {
+    font-size: 1.125rem;
+}
+
+nav ul li {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
+
 
 
 
