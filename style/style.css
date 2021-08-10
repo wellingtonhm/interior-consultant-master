@@ -28,11 +28,11 @@ body {
 
 /***** HEADER *****/
 
-#header-logo-menu {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+nav {
+    display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    width: 100%;
 }
 
 #logo {
@@ -49,11 +49,6 @@ body {
     font-size: 0.875rem;
     font-weight: 200;
     text-transform: uppercase;
-    color: var(--color-white);
-}
-
-#menu {
-    text-align: right;
     color: var(--color-white);
 }
 
@@ -78,11 +73,24 @@ body {
 }
 
 .menu-site.show {
-    
     opacity: 1;
     visibility: visible;
+}
+
+nav .menu-x {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 1.125rem;
 
 }
+
+nav .menu-x.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 
@@ -140,6 +148,7 @@ span {
 
 /*Font-icons-google*/
 .material-icons {
+    color: var(--color-white);
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
