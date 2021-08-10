@@ -263,7 +263,7 @@ a {
     font-size: 0.875em;
     font-weight: 700;
     color: var(--color-footer);
-    padding-top: 2rem;
+    padding-top: 8rem;
     padding-bottom: 2rem;
     text-align: center;
 }
@@ -271,4 +271,76 @@ a {
 .copyright a {
     text-decoration: none;
 
+}
+
+@media(min-width: 820px) {
+
+    /***** SIZE *****/
+
+    body {
+        margin: 2.625rem 4.875rem 1.5rem 4.875rem;
+    }
+
+    #content {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 8.75rem;
+    }
+
+    /***** FONTS *****/
+
+    .text-description h1 {
+        font-size: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .text-description p {
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .text-description a {
+        font-size: 1.5rem;
+    }
+
+    .name-author {
+        font-size: 0.875rem;
+
+    }
+
+    .title-author {
+        font-size: 0.75rem;
+    }
+
+    .description-author {
+        font-size: 1.5rem;
+
+    }
+
+    /***** MENU *****/
+    .menu-site {
+        display: grid;
+        background-color: var(--background-site);
+
+        height: 100%;
+        width: 0;
+
+        opacity: 1;
+        visibility: visible;
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+        justify-content: flex-start;
+    }
+
+    .menu-hamburger {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .content-menu-site {
+        display:flex;
+    }
 }
