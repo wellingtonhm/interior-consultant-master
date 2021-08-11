@@ -318,12 +318,19 @@ a {
     }
 
     /***** MENU *****/
-    .menu-site {
+    nav {
         display: grid;
+        grid-template-columns: 1fr max-content max-content;
+        justify-items: start;
+
+    }
+
+    .menu-site {
+        display: flex;
         background-color: var(--background-site);
 
         height: 100%;
-        width: 0;
+        width: 100%;
 
         opacity: 1;
         visibility: visible;
@@ -331,16 +338,19 @@ a {
         position: relative;
         top: 0px;
         left: 0px;
+        align-items: center;
+        
 
-        justify-content: flex-start;
     }
 
     .menu-hamburger {
         opacity: 0;
         visibility: hidden;
+        width: 0;
     }
 
     .content-menu-site {
-        display:flex;
+        display: flex;
+
     }
 }
